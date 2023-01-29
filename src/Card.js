@@ -14,7 +14,7 @@ const Container = styled.div`
   box-shadow: 2px 8px 8px #0000002e;
   width: 300px;
   overflow: hidden;
-  gap: 20px;
+  gap: 30px;
 `;
 const Image = styled.img`
   border-radius: 0 0 15px 15px;
@@ -27,9 +27,10 @@ const Heading = styled.div`
   justify-content: space-between;
 `;
 const H3 = styled.div`
-  font-weight: 900;
+  font-weight: 800;
   font-size: 20px;
   padding: 0 15px;
+  color: #222;
 `;
 const Price = styled.div`
   display: flex;
@@ -53,7 +54,7 @@ const SecondLine = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 25px;
+  padding: 0 15px;
 `;
 const Colors = styled.div`
   display: flex;
@@ -63,7 +64,7 @@ const Colors = styled.div`
 const Color = styled.div`
   height: 25px;
   width: 25px;
-  border: 2px solid ${({ color }) => color};
+  border: 3px solid ${({ color }) => color};
   display: flex;
   border-radius: 25px;
   font-size: 13px;
@@ -93,7 +94,7 @@ const ThirdLine = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 25px;
+  padding: 0 15px;
   padding-bottom: 20px;
   align-items: center;
 `;
@@ -101,16 +102,18 @@ const Rating = styled.div`
   display: flex;
   gap: 10px;
   flex-direction: row;
+  height: 33px;
+  align-items: center;
 `;
 const RatingText = styled.div`
   margin-top: -2px;
 `;
 const RatingIcon = styled.div``;
 const BuyButton = styled.div`
-  font-size: 25px;
+  font-size: 21px;
   text-transform: uppercase;
-  color: #3f51b5;
-  height: 35px;
+  color: hsl(309deg 100% 29%);
+  height: 33px;
 `;
 
 const CouponContainer = styled.div`
@@ -143,7 +146,7 @@ const Discount = styled.div`
   padding: 25px 0;
   color: #fff;
   align-items: center;
-  background-color: #3f51b5;
+  background-color: hsl(309deg 100% 29%);
 `;
 const CouponCode = styled.div`
   color: tomato;
